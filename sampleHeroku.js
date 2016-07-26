@@ -5,4 +5,6 @@ var server = http.createServer(function (req, res) {
 	res.end('<h1>Trail</h1>')
 });
 
-server.listen(5050);
+var port = Number(process.env.PORT || 5050)
+
+server.listen(port);
